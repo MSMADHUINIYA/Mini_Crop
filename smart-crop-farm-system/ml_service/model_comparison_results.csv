@@ -1,0 +1,6 @@
+model,accuracy,precision,recall,f1_score,cv_mean_accuracy,cv_std,train_time_sec
+Random Forest,99.55,99.57,99.55,99.55,99.43,0.54,0.5718
+Gradient Boosting,98.86,98.97,98.86,98.87,98.75,0.69,7.6073
+SVM (RBF),98.41,98.56,98.41,98.4,97.61,0.75,0.1659
+Decision Tree,97.95,98.06,97.95,97.94,98.47,0.71,0.0097
+KNN,97.95,98.04,97.95,97.93,96.53,0.75,0.0019
