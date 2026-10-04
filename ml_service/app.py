@@ -8,6 +8,7 @@ Run:  python app.py   (listens on port 5000, matches .env ML_SERVICE_URL default
 """
 
 import json
+import os
 
 import joblib
 import numpy as np
@@ -91,4 +92,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=False)
